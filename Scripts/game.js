@@ -161,7 +161,7 @@ function GameManager(gameBoard, playerName) { // construtor de objetos de contro
         //computerAI2 = new ComputerAI(computerField);
         
         playerField.fieldCaption.append("<span>Sua vez, Player2:</span>"); // preencha o cabeçalho das tabelas
-        computerField.fieldCaption.append("<span>Sua vez, " + playerName + ":</span>");
+        computerField.fieldCaption.append("<span>Sua vez, Player1:</span>");
         
         gameBoard.append(playerField.getFieldDiv()); // colocamos os campos de jogo gerados na div do nosso plugin
         gameBoard.append(computerField.getFieldDiv());
@@ -572,7 +572,7 @@ $.fn.makeGame = function (options) {
     
     this.empty(); // limpe a div em que vamos colocar o jogo
     
-    var gameManager = new GameManager(this, prompt("Olá! Por favor, insira seu nome:")); // cria um objeto de controle do jogo, passa jQuert o objeto div e o nome do jogador solicitado na caixa de diálogo
+    //var gameManager = new GameManager(this, prompt("Olá! Por favor, insira seu nome:")); // cria um objeto de controle do jogo, passa jQuert o objeto div e o nome do jogador solicitado na caixa de diálogo
     gameManager.startGame(); // comece o jogo
 }
 
