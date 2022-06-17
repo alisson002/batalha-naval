@@ -572,7 +572,7 @@ $.fn.makeGame = function (options) {
     
     this.empty(); // limpe a div em que vamos colocar o jogo
     
-    //var gameManager = new GameManager(this, prompt("Olá! Por favor, insira seu nome:")); // cria um objeto de controle do jogo, passa jQuert o objeto div e o nome do jogador solicitado na caixa de diálogo
+    var gameManager = new GameManager(this, prompt("Olá!")); // cria um objeto de controle do jogo, passa jQuert o objeto div e o nome do jogador solicitado na caixa de diálogo
     gameManager.startGame(); // comece o jogo
 }
 
